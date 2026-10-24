@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06111d">
+<meta name="description" content="Vex AI — transforme sua ideia em um site profissional.">
+<title>Vex AI — Criador de Sites</title>
+<style>
+:root{--bg:#030a12;--panel:#071725;--panel2:#0b2030;--line:#17394a;--text:#f4f8fb;--muted:#a8bdc9;--green:#00f0b0;--green2:#00b987;--gold:#d8b879}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 20%,#06352f 0,transparent 32%),radial-gradient(ellipse at 12% 55%,#082238 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:#030a12eF;border-bottom:1px solid #12313a;backdrop-filter:blur(16px)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-size:1.3rem;font-weight:850;letter-spacing:.02em}.brandmark{width:39px;height:39px;border:2px solid var(--green);border-radius:12px;display:grid;place-items:center;color:var(--green);font-weight:900;transform:rotate(-5deg);box-shadow:0 0 20px #00f0b033}.brand span span{color:var(--green)}.brand small{display:block;font-size:.57rem;letter-spacing:.16em;color:var(--muted);font-weight:500}.navlinks{display:flex;gap:25px;color:#c5d3db;font-size:.91rem}.navlinks a:hover{color:var(--green)}.navbtn{border:1px solid var(--green);color:var(--green);padding:10px 17px;border-radius:99px;background:#00f0b00b}
+.hero{padding:76px 0 58px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:42px;min-height:580px}.eyebrow{color:#71f8d5;font-size:.73rem;letter-spacing:.19em;text-transform:uppercase;font-weight:750}.hero h1{font-size:clamp(2.5rem,5.4vw,4.7rem);line-height:1.04;letter-spacing:-.055em;margin:18px 0}.hero h1 em{font-style:normal;color:var(--green);text-shadow:0 0 25px #00f0b02a}.lead{font-size:1.06rem;color:#c1d0d9;max-width:570px}.promptbox{margin-top:25px;border:1px solid #70d9bf;border-radius:18px;background:#081724;padding:10px;box-shadow:0 0 25px #00f0b01a}.promptbox textarea{width:100%;resize:vertical;min-height:76px;border:0;outline:0;background:transparent;color:white;padding:9px 10px}.promptbox textarea::placeholder{color:#90a7b5}.promptactions{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:0 7px 4px}.hint{font-size:.77rem;color:#9eb2bd}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:13px;padding:14px 19px;background:linear-gradient(110deg,#00d9a1,#6affc6);color:#02251d;font-weight:850;cursor:pointer;box-shadow:0 7px 24px #00e6a42b;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn:focus-visible,.category:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.btn.secondary{background:#0c2433;color:#d9fff5;border:1px solid #286453;box-shadow:none}.hero-visual{position:relative;min-height:380px;display:grid;place-items:center}.glow{position:absolute;width:85%;height:75%;background:#00dba21b;filter:blur(55px);border-radius:50%}.mockup{position:relative;width:min(100%,480px);border:1px solid #3a6d70;border-radius:20px;padding:12px;background:linear-gradient(145deg,#112b3b,#02080e);box-shadow:0 25px 80px #0009,0 0 35px #00e6a41a;transform:perspective(1000px) rotateY(-5deg) rotateX(2deg)}.mocktop{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #24424e;padding:8px 7px 14px;font-size:.75rem;color:#b6cbd5}.mocktop b{color:var(--gold);letter-spacing:.15em}.mockbody{padding:28px 17px 20px;min-height:255px;background:radial-gradient(ellipse at 80% 20%,#15574c,transparent 44%),linear-gradient(130deg,#07101b,#0b2630);border-radius:12px;margin-top:10px}.mocklabel{font-size:.67rem;color:var(--green);letter-spacing:.2em}.mockbody h2{font-size:2.2rem;line-height:1.02;margin:12px 0;color:#fff}.mockbody p{max-width:260px;color:#c0d0d6;font-size:.82rem}.mockcta{display:inline-block;background:var(--gold);color:#19150e;padding:8px 12px;border-radius:7px;font-weight:800;font-size:.7rem;margin-top:9px}.mocktiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:15px}.mocktiles span{border:1px solid #28515a;border-radius:8px;padding:10px 5px;text-align:center;font-size:.65rem;color:#c9e5df}.floating{position:absolute;right:-4px;bottom:15px;border:1px solid #276653;background:#071b24;padding:14px 16px;border-radius:14px;color:#d9fff5;font-size:.8rem;box-shadow:0 15px 40px #0008}.floating strong{display:block;color:var(--green);font-size:1.1rem}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:27px;color:#c5d6dc;font-size:.8rem}.trust span:before{content:"✦";color:var(--green);margin-right:7px}
+section{padding:58px 0}.section-head{max-width:720px;margin-bottom:26px}.section-head h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.1;letter-spacing:-.04em;margin:10px 0}.section-head p{color:var(--muted);margin:0}.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.category{position:relative;min-height:205px;text-align:left;overflow:hidden;padding:22px;border-radius:18px;border:1px solid #20404e;background:linear-gradient(145deg,#0b2130,#06111b);color:white;cursor:pointer;transition:.2s}.category:hover,.category.selected{border-color:var(--green);transform:translateY(-3px);box-shadow:0 0 25px #00f0b018}.category .icon{font-size:1.8rem;display:grid;place-items:center;width:50px;height:50px;border-radius:15px;background:#00f0b012;border:1px solid #1a6655;margin-bottom:18px}.category h3{margin:0 0 5px;font-size:1.15rem}.category p{margin:0;color:var(--muted);font-size:.88rem}.category .arrow{position:absolute;right:20px;top:20px;color:var(--green);font-size:1.3rem}.workflow{border-top:1px solid #173441;background:linear-gradient(180deg,#06111b66,#06111b)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:22px;border:1px solid #183846;border-radius:16px;background:#081724}.num{color:var(--green);font-weight:900;letter-spacing:.12em;font-size:.8rem}.step h3{margin:10px 0 7px}.step p{margin:0;color:var(--muted);font-size:.9rem}.builder{border:1px solid #245344;background:linear-gradient(135deg,#09221f,#071522 65%);border-radius:22px;padding:clamp(22px,4vw,38px);display:grid;grid-template-columns:1fr .9fr;gap:30px;align-items:center}.builder h2{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.1;margin:10px 0}.builder p{color:var(--muted)}.formgrid{display:grid;gap:12px}.formgrid label{font-size:.82rem;color:#c9d9df}.formgrid input,.formgrid select{width:100%;margin-top:5px;background:#03101a;color:#f5ffff;border:1px solid #254b57;border-radius:10px;padding:12px}.formgrid option{background:#06111b}.result{display:none;margin-top:15px;border:1px solid #276653;background:#031b19;padding:15px;border-radius:12px;color:#d9fff5}.result.show{display:block}.result code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#94f7d9;font-size:.8rem;margin-top:8px}
+footer{padding:27px 0;border-top:1px solid #16333f;color:#91a8b4;font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot b{color:#dce9ed}.disclaimer{font-size:.76rem;color:#78919e;margin-top:12px}
+@media(max-width:820px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:48px;gap:18px}.hero-visual{min-height:320px}.mockup{width:min(100%,520px)}.categories{grid-template-columns:1fr}.category{min-height:150px}.steps{grid-template-columns:1fr}.builder{grid-template-columns:1fr}.floating{right:0;bottom:0}.trust{gap:12px}}
+@media(min-width:821px){.category{min-height:210px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio" aria-label="Vex AI início"><span class="brandmark">N</span><span>NUVEXA <span>AI</span><small>SITES QUE IMPULSIONAM NEGÓCIOS</small></span></a>
+<nav class="navlinks" aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#categorias">Modelos</a><a href="#categorias">Categorias</a><a href="#como-funciona">Como funciona</a></nav>
+<a class="navbtn" href="#criar">✦ Começar</a>
+</div></header>
+<main>
+<section class="wrap hero" id="inicio">
+<div>
+<div class="eyebrow">Inteligência artificial · Design premium · Sua marca</div>
+<h1>Sua ideia merece<br>um site <em>extraordinário.</em></h1>
+<p class="lead">Transforme sua ideia em um site profissional. Escolha um estilo, conte o que seu negócio precisa e prepare-se para dar o próximo passo no mundo digital.</p>
+<form class="promptbox" id="heroForm">
+<textarea id="heroPrompt" aria-label="Descreva o site que deseja criar" placeholder="Descreva o site que você quer criar..." required></textarea>
+<div class="promptactions"><span class="hint">Ex.: uma lanchonete moderna com cardápio e WhatsApp</span><button class="btn" type="submit" aria-label="Começar a criar">Criar com IA ➜</button></div><p id="aiStatus" class="hint" aria-live="polite">A IA real funciona quando o servidor estiver configurado.</p>
+</form>
+<div style="margin-top:14px"><a class="btn" href="#criar">✦ Criar meu site com IA <span aria-hidden="true">→</span></a></div>
+<div class="trust"><span>Design responsivo</span><span>Modelos personalizáveis</span><span>Feito para seu negócio</span></div>
+</div>
+<div class="hero-visual" aria-label="Demonstração visual de um site premium">
+<div class="glow"></div><div class="mockup">
+<div class="mocktop"><b>✦ STUDIO / DEMO</b><span>Início　 Serviços　 Contato</span></div>
+<div class="mockbody"><div class="mocklabel">SEU NEGÓCIO, SUA IDENTIDADE</div><h2>Uma presença<br>que impressiona.</h2><p>Um site marcante, pensado para apresentar seus serviços e conquistar clientes.</p><span class="mockcta">CONHEÇA NOSSO TRABALHO ↗</span><div class="mocktiles"><span>✦ Design</span><span>◈ Qualidade</span><span>↗ Resultado</span></div></div></div>
+<div class="floating"><strong>VEX AI</strong>Da ideia ao seu próximo site</div>
+</div>
+</section>
+<section class="wrap" id="categorias">
+<div class="section-head"><div class="eyebrow">Comece por aqui</div><h2>Que tipo de site você quer <span style="color:var(--green)">criar?</span></h2><p>Escolha uma categoria para personalizar sua experiência. Você poderá descrever detalhes depois.</p></div>
+<div class="categories">
+<button class="category" data-category="Lanchonete" type="button"><span class="arrow">↗</span><span class="icon">🍔</span><h3>Lanchonetes</h3><p>Cardápio, combos, horários e pedidos pelo WhatsApp.</p></button>
+<button class="category" data-category="Barbearia" type="button"><span class="arrow">↗</span><span class="icon">✂️</span><h3>Barbearias</h3><p>Serviços, preços, galeria de cortes e agendamento.</p></button>
+<button class="category" data-category="Loja" type="button"><span class="arrow">↗</span><span class="icon">🛍️</span><h3>Lojas</h3><p>Vitrine de produtos, destaques e contato comercial.</p></button>
+</div>
+</section>
+<section class="workflow" id="como-funciona"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Simples do começo ao fim</div><h2>Seu site começa com uma ideia.</h2><p>O fluxo inicial da Vex AI foi pensado para ser simples, inclusive no celular.</p></div>
+<div class="steps"><article class="step"><div class="num">01 / ESCOLHA</div><h3>Selecione uma categoria</h3><p>Comece com lanchonete, barbearia ou loja. Novas categorias poderão ser adicionadas.</p></article><article class="step"><div class="num">02 / PERSONALIZE</div><h3>Conte como você imagina</h3><p>Informe nome, estilo, serviços ou produtos e os recursos importantes para seu negócio.</p></article><article class="step"><div class="num">03 / CRIE</div><h3>Prepare seu site</h3><p>Nesta etapa, o criador monta um primeiro site HTML funcional a partir dos dados informados. A conexão com uma IA generativa real será adicionada depois.</p></article></div>
+</div></section>
+<section class="wrap" id="criar"><div class="builder">
+<div><div class="eyebrow">Vamos tirar sua ideia do papel</div><h2>Comece a planejar seu site.</h2><p>Escolha a categoria e preencha os dados iniciais. Esta demonstração monta um briefing para a próxima etapa; a geração real por IA será conectada posteriormente.</p><p style="color:var(--gold);font-size:.84rem">Sem pagamento nesta demonstração.</p></div>
+<form class="formgrid" id="builderForm">
+<label>Tipo de negócio<select id="businessType"><option value="Lanchonete">Lanchonete</option><option value="Barbearia">Barbearia</option><option value="Loja">Loja</option><option value="Outro negócio">Outro negócio</option></select></label>
+<label>Nome do negócio<input id="businessName" placeholder="Ex.: Lanche do Bairro" required maxlength="80"></label>
+<label>Estilo desejado<select id="style"><option>Premium e elegante</option><option>Moderno e minimalista</option><option>Urbano e ousado</option><option>Clássico e sofisticado</option></select></label>
+<label>O que o site precisa ter?<input id="features" placeholder="Ex.: cardápio, preços, WhatsApp" maxlength="240"></label>
+<label>WhatsApp do negócio (opcional)<input id="whatsapp" placeholder="Ex.: 5511999999999" inputmode="numeric" maxlength="20"></label>
+<button class="btn" type="submit">Montar meu briefing ↗</button>
+<div class="result" id="result" aria-live="polite"><strong>Seu projeto está preparado!</strong><p id="resultText"></p><div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:12px"><button class="btn secondary" type="button" id="copyBtn">Copiar briefing</button><button class="btn" type="button" id="previewBtn">Visualizar site</button><button class="btn" type="button" id="downloadBtn">Baixar site HTML</button></div><p style="font-size:.76rem;color:#9eb8b9">O arquivo é um primeiro modelo gerado no navegador, ainda sem IA conectada, WhatsApp configurado ou publicação online.</p></div>
+</form>
+</div></section>
+<section class="wrap" id="projetos"><div class="section-head"><div class="eyebrow">Seus trabalhos</div><h2>Projetos recentes</h2><p>Histórico guardado apenas neste navegador.</p></div><div id="projectHistory"><p class="hint">Gere um site para ver seus projetos aqui.</p></div></section>
+</main>
+<footer><div class="wrap"><div class="foot"><span><b>VEX AI</b> · Transformando ideias em sites.</span><span>Protótipo inicial · 2026</span></div><p class="disclaimer">Esta versão já consegue montar e baixar sites iniciais em HTML usando modelos locais. A geração por IA real, contas, pagamentos e publicação automática ainda precisam ser integrados antes de oferecer o serviço a clientes.</p></div></footer>
+<script>
+const categoryButtons=[...document.querySelectorAll('.category')];
+const typeSelect=document.getElementById('businessType');
+function selectCategory(name){categoryButtons.forEach(b=>b.classList.toggle('selected',b.dataset.category===name));if([...typeSelect.options].some(o=>o.value===name))typeSelect.value=name;document.getElementById('criar').scrollIntoView({behavior:'smooth',block:'start'});}
+categoryButtons.forEach(b=>b.addEventListener('click',()=>selectCategory(b.dataset.category)));
+document.getElementById('heroForm').addEventListener('submit',e=>{e.preventDefault();const prompt=document.getElementById('heroPrompt').value.trim();if(!prompt)return;const low=prompt.toLowerCase();if(low.includes('barbear'))typeSelect.value='Barbearia';else if(low.includes('loja'))typeSelect.value='Loja';else if(low.includes('lanche')||low.includes('hambúrg')||low.includes('hamburg'))typeSelect.value='Lanchonete';document.getElementById('features').value=prompt;document.getElementById('businessName').focus();document.getElementById('criar').scrollIntoView({behavior:'smooth'});});
+let generatedSite = '';
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function makeSite(name,type,style,features,whatsapp){
+ const isFood = type === 'Lanchonete';
+ const isBarber = type === 'Barbearia';
+ const title = isFood ? 'Sabor que dá vontade de voltar.' : isBarber ? 'Seu estilo começa aqui.' : 'Qualidade que combina com você.';
+ const subtitle = isFood ? 'Confira nossas opções e encontre seu próximo favorito.' : isBarber ? 'Cuidado, personalidade e atenção a cada detalhe.' : 'Conheça nossos produtos e descubra novidades.';
+ const cards = isFood ? [['🍔','Combos especiais'],['🍟','Favoritos da casa'],['🥤','Bebidas geladas']] : isBarber ? [['✂️','Cortes modernos'],['🧔','Barba e acabamento'],['✨','Estilo personalizado']] : [['✦','Destaques'],['◇','Novidades'],['✓','Qualidade']];
+ const safeName=esc(name), safeType=esc(type), safeFeatures=esc(features); const wa=String(whatsapp||'').replace(/\\D/g,''); const contactHref=wa ? 'https://wa.me/'+wa : '#contato';
+ return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#06111d"><title>${safeName} | ${safeType}</title><style>*{box-sizing:border-box}body{margin:0;background:#06111d;color:#f6fafb;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif}header{padding:20px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #214238}header b{font-size:1.2rem}header b span{color:#00e5a4}header a,.cta{background:#00e5a4;color:#04241b;padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:800}.hero{padding:75px 7%;background:radial-gradient(ellipse at 80% 20%,#075442,transparent 45%),linear-gradient(120deg,#06111d,#0a2630)}.eyebrow{color:#00e5a4;text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:800}.hero h1{font-size:clamp(2.5rem,8vw,5rem);line-height:1.02;max-width:800px;margin:17px 0}.hero p{color:#c1d2d8;max-width:590px;line-height:1.7}.cta{display:inline-block;margin-top:14px}.wrap{padding:48px 7%;max-width:1200px;margin:auto}.wrap h2{font-size:2rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{border:1px solid #245047;border-radius:16px;background:#0a1c29;padding:23px}.card i{font-size:2rem;font-style:normal}.card p,footer{color:#aec2ca;line-height:1.6}.about{border-top:1px solid #193b42}.note{color:#8aa5ad;font-size:.8rem}@media(max-width:650px){.grid{grid-template-columns:1fr}.hero{padding:52px 7%}header{padding:16px 5%}}</style></head><body><header><b>✦ ${safeName.split(' ').map(esc).join(' ')} <span>●</span></b><a href="#contato">Fale conosco</a></header><main><section class="hero"><div class="eyebrow">${safeType} · Atendimento especial</div><h1>${title}</h1><p>${subtitle} ${safeFeatures}</p><a class="cta" href="#contato">Conheça nosso trabalho ↗</a></section><section class="wrap"><div class="eyebrow">Feito para você</div><h2>Conheça nossos destaques</h2><div class="grid">${cards.map(c=>`<article class="card"><i>${c[0]}</i><h3>${c[1]}</h3><p>Atendimento com qualidade, cuidado e uma experiência pensada para você.</p></article>`).join('')}</div></section><section class="wrap about" id="contato"><div class="eyebrow">Entre em contato</div><h2>Vamos conversar?</h2><p>Adicione aqui seu telefone, WhatsApp, endereço e horário de funcionamento para que seus clientes encontrem você.</p><p class="note">Modelo inicial criado com Vex AI. Personalize as informações antes de publicar.</p></section></main><footer class="wrap">© ${new Date().getFullYear()} ${safeName}. Todos os direitos reservados.</footer></body></html>`;
+}
+document.getElementById('builderForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('businessName').value.trim();const type=typeSelect.value;const style=document.getElementById('style').value;const features=document.getElementById('features').value.trim()||'Apresentação do negócio, serviços/produtos e contato';const brief=`Crie um site profissional para ${name}.\\nCategoria: ${type}.\\nEstilo visual: ${style}.\\nRecursos desejados: ${features}.\\nIdentidade visual sugerida: azul-marinho, verde-esmeralda e detalhes dourados.\\nRequisitos: responsivo, acessível, rápido e fácil de navegar no celular.`;generatedSite=makeSite(name,type,style,features,document.getElementById('whatsapp').value.trim());
+let saved=[];try{saved=JSON.parse(localStorage.getItem(historyKey)||'[]')}catch(e){}
+saved.push({name:name,type:type,html:generatedSite,filename:safeFilename(name)});
+try{localStorage.setItem(historyKey,JSON.stringify(saved.slice(-10)))}catch(e){}
+renderHistory();
+document.getElementById('resultText').textContent=brief;document.getElementById('result').classList.add('show');document.getElementById('copyBtn').dataset.brief=brief;});
+document.getElementById('copyBtn').addEventListener('click',async e=>{const text=e.currentTarget.dataset.brief||'';try{await navigator.clipboard.writeText(text);e.currentTarget.textContent='Briefing copiado ✓';}catch(err){const area=document.createElement('textarea');area.value=text;document.body.appendChild(area);area.select();document.execCommand('copy');area.remove();e.currentTarget.textContent='Briefing copiado ✓';}});
+document.getElementById('previewBtn').addEventListener('click',()=>{if(!generatedSite)return;const blob=new Blob([generatedSite],{type:'text/html'});const url=URL.createObjectURL(blob);window.open(url,'_blank','noopener');setTimeout(()=>URL.revokeObjectURL(url),60000);});
+document.getElementById('downloadBtn').addEventListener('click',()=>{if(!generatedSite)return;const name=(document.getElementById('businessName').value.trim()||'meu-site').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');const blob=new Blob([generatedSite],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(name||'meu-site')+'.html';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+
+const historyKey='vexai-projects-v1';
+function safeFilename(value){return (value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'meu-site')+'.html';}
+function downloadText(filename,content){const blob=new Blob([content],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function renderHistory(){const host=document.getElementById('projectHistory');if(!host)return;let items=[];try{items=JSON.parse(localStorage.getItem(historyKey)||'[]')}catch(e){}host.innerHTML='';if(!items.length){host.textContent='Nenhum projeto salvo ainda.';return;}items.slice().reverse().forEach(it=>{const row=document.createElement('div');row.style.cssText='display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px;border:1px solid #20404e;border-radius:12px;margin-top:8px;background:#06131d';const title=document.createElement('strong');title.textContent=it.name+' — '+it.type;const btn=document.createElement('button');btn.className='btn secondary';btn.type='button';btn.textContent='Baixar HTML';btn.addEventListener('click',()=>downloadText(it.filename,it.html));row.append(title,btn);host.appendChild(row);});}
+
+renderHistory();
+
+document.getElementById('heroForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const prompt = document.getElementById('heroPrompt').value.trim();
+  const status = document.getElementById('aiStatus');
+  if (!prompt) return;
+  status.textContent = 'A Vex AI está criando seu site...';
+  try {
+    const response = await fetch('/api/generate-site', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({prompt})
+    });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || 'Não foi possível gerar o site.');
+    const blob = new Blob([data.html], {type: 'text/html;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = (data.filename || 'site-vex-ai.html');
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    status.textContent = 'Site gerado pela IA e baixado. Abra o arquivo HTML para visualizar.';
+  } catch (err) {
+    status.textContent = 'A IA ainda não está conectada ao servidor. Configure e publique o backend seguindo o guia.';
+  }
+});
+
+</script>
+</body>
+</html>
