@@ -1,0 +1,20 @@
+# Vex AI — integração real de geração de sites
+
+## Arquivos
+- `vex-ai-com-ia-conectavel.html`: interface que chama `/api/generate-site`.
+- `server.js`: backend que chama a OpenAI Responses API sem expor a chave no navegador.
+- `package.json`: dependências e comando de inicialização.
+
+## Configuração
+1. Coloque os três arquivos na mesma pasta.
+2. Instale Node.js em um computador ou ambiente de hospedagem compatível.
+3. No terminal, execute `npm install`.
+4. Configure `OPENAI_API_KEY` como variável de ambiente no servidor (não dentro do HTML e não em repositório público).
+5. Opcional: configure `OPENAI_MODEL` com um modelo habilitado para sua conta. O padrão deste projeto é `gpt-6-astra`; confirme o acesso ao modelo na sua conta.
+6. Execute `npm start` e abra a URL do servidor no navegador. Não abra o HTML como `file://`, porque a chamada `/api/generate-site` precisa de um servidor.
+
+## Segurança e limites
+- Nunca compartilhe sua chave da API no chat nem a coloque no HTML.
+- O uso da API pode gerar custos separados da assinatura do ChatGPT; confira faturamento e limites da sua conta.
+- Antes de disponibilizar publicamente, adicione autenticação, limite de requisições, proteção contra abuso, monitoramento de custos e termos/privacidade.
+- Este protótipo gera e baixa HTML. Ainda não implementa login, cobrança de R$ 10, banco de dados nem publicação automática dos sites.
